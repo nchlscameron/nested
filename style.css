@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Subjects Container */
+.subjects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Subject Styles */
+.subject {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subject:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject h2 {
+    margin: 0 0 10px 0;
+    color: #35424a;
+}
+
+/* Topics Styles */
+.topics {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 0 20px;
+}
+
+.topics a {
+    text-decoration: none;
+    color: #2c8aee;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.topics a:hover {
+    background-color: #e1e1e1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .subjects-container {
+        padding: 0 10px;
+    }
+    
+    .subject {
+        padding: 10px;
+    }
+}
